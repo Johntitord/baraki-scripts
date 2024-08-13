@@ -1,5 +1,5 @@
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+console.log('Script cargado');document.addEventListener('DOMContentLoaded', function () {
     // Mostrar el mensaje si se encuentra en la URL específica
     if (window.location.href === 'https://www.baraki.mx/products/checkout/delivery') {
         showDeliveryMessage();
