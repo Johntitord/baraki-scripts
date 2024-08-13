@@ -1,11 +1,13 @@
+<script>
 Ecwid.OnAPILoaded.add(function() {
     console.log('Ecwid JS API is loaded.');
 
+    // Verificar que el DOM esté completamente cargado
     document.addEventListener('DOMContentLoaded', function () {
         console.log('DOM completamente cargado y parseado.');
 
         // Verificar la URL actual
-        if (window.location.href === 'baraki.mx/products/checkout/delivery') {
+        if (window.location.href.includes('/products/checkout/delivery')) {
             console.log('Estamos en la página de entrega.');
             showDeliveryMessage();
         } else {
@@ -65,6 +67,7 @@ Ecwid.OnAPILoaded.add(function() {
         }
     });
 });
+</script>
 
 
 
