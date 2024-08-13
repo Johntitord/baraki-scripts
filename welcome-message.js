@@ -1,12 +1,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-    // Verificar si el mensaje fue cerrado en las últimas 12 horas
-    const lastClosed = localStorage.getItem('deliveryMessageClosed');
-    const twelveHours = 12 * 60 * 60 * 1000;
-
-    // Mostrar el mensaje si se cumple la condición de tiempo y URL
-    if (window.location.href === 'https://www.baraki.mx/products/checkout/delivery' && 
-        (!lastClosed || (Date.now() - lastClosed) >= twelveHours)) {
+    // Mostrar el mensaje si se encuentra en la URL específica
+    if (window.location.href === 'https://www.baraki.mx/products/checkout/delivery') {
         showDeliveryMessage();
     }
 
@@ -43,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         closeButton.addEventListener('click', function () {
             deliveryMessage.style.display = 'none';
-            localStorage.setItem('deliveryMessageClosed', Date.now());
         });
 
         deliveryMessage.innerHTML = `
