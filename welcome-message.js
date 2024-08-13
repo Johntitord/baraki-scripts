@@ -1,11 +1,17 @@
-<script>
-;document.addEventListener('DOMContentLoaded', function () {
-    // Mostrar el mensaje si se encuentra en la URL específica
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('DOM completamente cargado y parseado.');
+
+    // Verificar la URL actual
     if (window.location.href === 'https://www.baraki.mx/products/checkout/delivery') {
+        console.log('Estamos en la página de entrega.');
         showDeliveryMessage();
+    } else {
+        console.log('No estamos en la página de entrega.');
     }
 
     function showDeliveryMessage() {
+        console.log('Mostrando el mensaje de entrega.');
+
         const deliveryMessage = document.createElement('div');
         deliveryMessage.id = 'delivery-message';
         deliveryMessage.style.position = 'fixed';
@@ -38,6 +44,7 @@
 
         closeButton.addEventListener('click', function () {
             deliveryMessage.style.display = 'none';
+            console.log('Mensaje cerrado.');
         });
 
         deliveryMessage.innerHTML = `
@@ -50,9 +57,10 @@
 
         setTimeout(function () {
             deliveryMessage.style.display = 'block';
+            console.log('Mensaje mostrado después de 1 segundo.');
         }, 1000);
     }
 });
-</script>
+
 
 
