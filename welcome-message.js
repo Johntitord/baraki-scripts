@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         deliveryMessage.innerHTML = `
-            <h2 style="text-align: center; font-weight: bold;”>¡RECUERDA!</h2>
+            <h2 style="text-align: center; font-weight: bold;">¡RECUERDA!</h2>
             <p>Estás por seleccionar un envío por cobrar, es decir, la cuota de envío la pagarás directamente al repartidor en efectivo, esta cuota puede variar dependiendo de tu ubicación y no la cubrimos nosotros.</p>
         `;
 
@@ -59,5 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 1000);
     }
 });
-
 </script>
+
+
