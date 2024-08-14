@@ -6,7 +6,7 @@ Ecwid.OnAPILoaded.add(function() {
         console.log('DOM completamente cargado y parseado.');
         
         // Verificar la URL actual
-        if (window.location.pathname === 'https://www.baraki.mx/products/checkout/delivery') {
+        if (window.location.href === 'https://www.baraki.mx/products/checkout/delivery') {
             console.log('Estamos en la página de entrega.');
             showDeliveryMessage();
         } else {
