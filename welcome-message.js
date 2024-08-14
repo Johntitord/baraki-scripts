@@ -1,3 +1,4 @@
+<script>
 document.addEventListener('DOMContentLoaded', function() {
     // Crear el contenedor de la barra de navegación
     var navbar = document.createElement('nav');
@@ -44,3 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Añadir la barra de navegación al cuerpo del documento
     document.body.insertBefore(navbar, document.body.firstChild);
 });
+
+</script>
+
