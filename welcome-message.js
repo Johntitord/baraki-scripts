@@ -1,3 +1,4 @@
+<script>
 Ecwid.OnAPILoaded.add(function() {
     console.log('Ecwid JS API is loaded.');
 
@@ -72,5 +73,6 @@ Ecwid.OnAPILoaded.add(function() {
     });
 });
 
+</script>
 
 
